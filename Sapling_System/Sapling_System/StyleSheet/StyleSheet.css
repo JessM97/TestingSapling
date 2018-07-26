@@ -1,0 +1,1223 @@
+﻿
+/*----------------------------------------------------------------------------------------------------------*/
+/*MASTER PAGE STYLING*/
+/*----------------------------------------------------------------------------------------------------------*/
+body {
+    background: #808080 !important;
+    margin: 0px;
+}
+
+.pageName {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 6px;
+    width: 50%;
+    color: #FFFFFF;
+    float:left;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+/* HEADER*/
+/*----------------------------------------------------------------------------------------------------------*/
+
+.header {
+    background-color: #3b3a3a;
+    height: 50px;
+    border-bottom: 10px solid #3f723c;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    padding-left: 230px;
+}
+
+/*inside header on the right*/
+.header-right {
+    display: table;
+    float: right;
+    padding-right: 30px;
+    /*background-color;*/
+}
+
+.header-right a:link, a:visited {
+    font-family: 'Lato', sans-serif;
+    font-size:20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin-right: 100px;
+    right:0;
+    padding-top: 0px;
+    font-weight: bold;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+/* LEFT PANE - containing the menu and title*/
+/*----------------------------------------------------------------------------------------------------------*/
+.left_pane {
+    width: 200px;
+    height: 100%;
+    position: relative;
+}
+/*....................................*/
+/*title - the green block above menu*/
+/*....................................*/
+.title {
+    /*display:grid;*/
+    /*align-content:center;*/
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+    position: fixed;
+    background-color: #3f723c;
+    /*padding: 2em 2em;*/
+    z-index: 10;
+    text-align: center;
+}
+
+.img-rounded {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #3f723c;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.2);
+}
+
+/*-----------------------------*/
+/*Notifications*/
+
+#notificationIcon:hover {
+    color: #808080;
+    /*font-size:21px;*/
+}
+
+@keyframes fadeIn {
+    from { visibility:hidden; }
+    to { visibility:visible; }
+}
+
+/*--------------------------------------*/
+/*This is the hover funcction to show the notifications*/
+/*Comment this below out if its annoying*/
+/*--------------------------------------*/
+
+/*#notification_li:hover .not_dropdown{
+    display: block;
+    animation: fadeIn forwards;
+}*/ 
+
+/*--------------------------------------*/
+/*--------------------------------------*/
+
+#notification_li {
+    position: relative;
+}
+
+#notification_count {
+    padding: 3px 7px 3px 7px;
+    background: darkred;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left:75%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    margin-top: -11px;
+    font-size: 15px;
+}
+
+.not_dropdown{
+    visibility:hidden;
+    padding-top:3px;
+    border: 3px solid;
+    border-color: black;
+    border-radius: 8px;
+    background-color: white;
+    max-height: 800px;    
+    overflow: auto;
+    /*overflow: hidden;*/
+    /*clip-path: polygon(47% 3%, 50% 0, 53% 3%, 100% 3%, 100% 100%, 0 100%, 0 3%);*/    
+}
+
+.not_menu {
+    padding-left:10px;
+    padding-right:10px;
+    list-style:none !important;
+}
+
+.indiv_not{
+    border-bottom: 2px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.indiv_not_new {
+    border-bottom: 2px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #EDEDED;
+}
+
+.btnNotification {
+    text-decoration: none !important;
+    width: 115px;
+    padding: 8px 8px !important;
+    border-radius: 8px !important;
+    border: 1px solid black !important;
+    color: black !important;
+    background-color: #3f723c !important;
+    font-size: 13px !important; 
+    font-weight: bold !important;
+    /*margin-left: 20px !important;*/
+    margin-right:0 !important;
+}
+
+
+    .btnNotification:hover {
+        text-decoration: none !important;
+        background-color: #679a64 !important;
+        color: black !important;
+        font-weight: bold !important;
+    }
+
+    .btnNotification:visited {
+        text-decoration: none;
+    }
+
+
+.not_label {
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-size: 13px;
+    /*padding-left: 15px;*/
+    padding-right: 5px;
+}
+
+.not_message {
+    font-weight: bold;
+}
+
+/*....................................*/
+/*menu*/
+/*....................................*/
+.logo {
+    width: auto;
+    height: 200px;
+}
+
+#logoImg {
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.menu {
+    height: 100%;
+    font-size: 18px;
+    list-style: none;
+    background-color: #3b3a3a;
+    width: 200px;
+    font-family: 'Lato', sans-serif;
+    position: fixed;
+    margin-top: 200px;
+    z-index: 11;
+}
+
+    .menu ul {
+        list-style: none;
+        color: #bfbbbb;
+        /*height: 100%;*/
+        text-align: center;
+    }
+
+        .menu ul li {
+            position: relative;
+            width: 198px;
+            background-color: #3b3a3a;
+            margin-left: -40px;
+            height: 40px;
+            border: 1px solid rgba(114, 112, 112, 0.81);
+            padding-top: 6px;
+        }
+
+            .menu ul li a {
+                text-decoration: none;
+            }
+
+                .menu ul li a:link {
+                    color: #bfbbbb;
+                }
+
+                .menu ul li a:visited {
+                    color: #bfbbbb;
+                }
+
+            .menu ul li:hover {
+                background-color: rgba(114, 112, 112, 0.81);
+                border-left: solid #fff;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+        .menu ul ul {
+            transition: all 0.3s;
+            visibility: hidden;
+            position: absolute;
+            left: 99%;
+            top: -2%;
+            font-size: 13px;
+        }
+
+        .menu ul li:hover > ul {
+            visibility: visible;
+        }
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*DIV STYLING*/
+/*----------------------------------------------------------------------------------------------------------*/
+
+/*the main div with all the div inside it*/
+.content {
+    background-color: #bfbbbb;
+    width: 1400px;
+    margin: 0px auto;
+    margin-top: 80px;
+    position: relative;
+    padding: 10px;
+    margin-left: 230px;
+}
+/*div buttons (on top)*/
+.buttons {
+    background-color: #bfbbbb;
+    padding: 50px;
+    padding-bottom: 30px;
+}
+
+#configButtons {
+    padding-bottom: 50px;
+    padding-left: 0;
+}
+
+.ribbon {
+    width: 100%;
+    background-color: #aea8a8;
+    height: 110px;
+    /*display: table;*/
+}
+
+.ribbonPadding {
+    width: 50%;
+    padding-left: 30px;
+    float: left;
+    padding-top: 20px;
+}
+
+.ribbonButtons {
+    height: 100%;
+    width: 50%;
+    padding-left: 10%;
+    display: table-cell;
+    float: left;
+    padding-top: 2.5%;
+    margin: auto;
+}
+
+.ribbonRight {
+    height: 100%;
+    width: 50%;
+    padding: 0;
+    display: table-cell;
+    float: left;
+    padding-left: 5%;
+    padding-top: 2.5%;
+}
+
+.rprtDescr {
+    height: 100%;
+    width: 75%;
+    padding: 1%;    
+    margin-left: 100px;
+    margin: 0 auto;    
+    text-align:center;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #808080;
+    border-radius: 8px;
+    background-color: #e2e2e2;
+}
+
+/*is placed inside buttons if you need a space on the right to display info look at CapturePayment.aspx*/
+.top-right {
+    float: right;
+    /*margin-top:-50px;*/
+    margin-right: 60px;
+    padding: 0;
+}
+
+/*use when you need only one big div*/
+.table {
+    background-color: #bfbbbb;
+    padding-top: 20px;
+    padding-left: 30px;
+    /*margin: 0 auto;*/
+}
+
+/*div that contains the buttons at the bottom*/
+.bottom {
+    background-color: #bfbbbb;
+    padding: 50px;
+    position: relative;
+    width: 100px;
+}
+
+/*inside div bottom to align buttons to the right*/
+.bottom-right {
+    float: right;
+    margin-right: 200px;
+}
+
+.colbuttons {
+    padding-top: 50px;
+    margin-right: 5%;
+    text-align: right;
+}
+
+.orderTotal {
+    float: right;
+    margin-right: 30px;
+}
+/*div that contains the search functions*/
+.search {
+    padding: 25px;
+    padding-left: 50px;
+    background-color: #bfbbbb;
+}
+
+/*use when you need two columns like ClientDetails.aspx (used with .col)*/
+.columns {
+    display: table;
+    width: 80%;
+}
+
+.columns90 {
+    display: table;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.columnsOrder {
+    display: table;
+    padding-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+/*this creates the two columns*/
+.col {
+    display: table-cell;
+    padding-left: 40px;
+}
+    /*creates inline spacing */
+    .col .fields {
+        margin-left: 15px;
+    }
+
+.colcol {
+    display: table-cell;
+    padding-right: 40px;
+}
+
+.borderdiv {
+    border: 3px solid;
+    border-color: #3B3A3A;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+
+.col60 {
+    display: table-cell;
+    padding-left: 40px;
+    padding-top: 0px;
+    width: 60%;
+}
+
+.col40 {
+    display: table-cell;
+    padding-left: 40px;
+    padding-top: 0px;
+    width: 40%;
+}
+/*these is only for PlaceOrder.aspx*/
+.col-border1 {
+    display: table-cell;
+    padding-top: 0px;
+    width: 40%;
+    border: 3px solid #3b3a3a;
+    border-radius: 8px;
+    border-collapse: collapse;
+}
+
+.col-border2 {
+    display: table-cell;
+    padding-top: 0px;
+    width: 60%;
+    border: 3px solid #3b3a3a;
+    border-radius: 8px;
+    border-collapse: collapse;
+}
+
+.col-border3 {
+    display: table-cell;
+    padding-top: 0px;
+    width: 50%;
+    border: 1px solid #808080;
+    border-radius: 8px;
+    border-collapse: collapse;
+    padding-bottom: 30px;
+}
+
+    .col-border3 .margin {
+        margin-left: 15px;
+    }
+
+.OrderHeading {
+    /*border-bottom: 1px solid black;*/
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-top: -27px;
+    /*padding-left: 30px;*/
+    background-color: #3b3a3a;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.center_col {
+    display: grid;
+}
+
+.vatActivCol {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+}
+
+#divSeed {
+    width: 100px;
+}
+
+#content_TabContainer1_tabGeneratedReport_crvPayslips {
+    width: 100%;
+    /*max-height: 650px;
+        overflow-y: auto;*/
+}
+
+.reportDiv {
+    padding-left: 10%;
+    max-height: 750px;
+    overflow-y: auto;
+}
+
+.not_dropdown {
+    width: 400px;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*BUTTON STYLING*/
+/*----------------------------------------------------------------------------------------------------------*/
+
+.btn {
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    color: black;
+    background-color: #3f723c;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+    .btn:hover {
+        text-decoration: none;
+        background-color: #679a64;
+        color: black;
+        font-weight: bold;
+    }
+
+    .btn:visited {
+        text-decoration: none;
+    }
+
+.btnSmall {
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: #807E7E;
+    float: right;
+}
+
+    .btnSmall:hover {
+        text-decoration: none;
+        background-color: #679a64;
+        color: white;
+        font-weight: bold;
+    }
+
+
+.btnSmallRemove {
+    text-decoration: none;
+    font-size: 11px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    background-color: #807E7E;
+    color: black;
+}
+
+    .btnSmallRemove:hover {
+        text-decoration: none;
+        background-color: darkred;
+        color: white;
+        font-weight: bold;
+    }
+
+.btnSmallAdd {
+    text-decoration: none;
+    font-size: 11px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    background-color: #807E7E;
+    color: black;
+}
+
+    .btnSmallAdd:hover {
+        text-decoration: none;
+        background-color: #679a64;
+        color: white;
+        font-weight: bold;
+    }
+
+
+/*.btnNotification:link, .btnNotification:visited {
+    
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    color: black;
+    background-color: #3f723c;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 20px;
+}*/
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*GLYPHICON STYLING*/
+/*----------------------------------------------------------------------------------------------------------*/
+.glyphicon {
+    font-size: 20px;
+    vertical-align: middle;
+    color: black;
+}
+
+    .glyphicon glyphicon-edit, .glyphicon glyphicon-trash, .glyphicon glyphicon-floppy-disk,
+    .glyphicon glyphicon-search, .glyphicon glyphicon-ban-circle, .glyphicon glyphicon-plus,
+    .glyphicon glyphicon-file, .glyphicon glyphicon-credit-card, .glyphicon glyphicon-user,
+    .glyphicon glyphicon-list-alt,glyphicon glyphicon-refresh,glyphicon glyphicon-qrcode {
+        display: block;
+        text-align: center;
+    }
+
+    .glyphicon glyphicon-shopping-cart {
+        display: block;
+        text-align: center;
+        /*font-size: 15px;*/
+    }
+
+    .glyphicon glyphicon-remove {
+        font-size: 10px !important;
+        display: block;
+        text-align: center;
+    }
+
+.smallGlyphAdd {
+    font-size: 20px;
+    vertical-align: middle;
+    color: white;
+    font-weight: bold;
+}
+
+.smallGlyphAddOrder {
+    font-size: 23px;
+    vertical-align: middle;
+    color: white;
+    font-weight: bold;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*TABLE STYLING*/
+/*----------------------------------------------------------------------------------------------------------*/
+
+/* table client */
+.tbl {
+    border: 1px solid black;
+    border-collapse: collapse;
+    /*margin: 0 auto;*/
+    text-align: center;
+}
+
+    .tbl tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+
+        .tbl tr:nth-child(even) {
+            background-color: #bfbbbb;
+        }
+
+        .tbl tr:hover {
+            background-color: rgba(63, 114, 60, 0.74);
+            color: #fff;
+        }
+
+    .tbl th {
+        background-color: #3f723c;
+        color: white;
+        border: 1px solid black;
+        border-collapse: collapse;
+        height: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tbl td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+.tbl-small {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+    .tbl-small tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+
+        .tbl-small tr:nth-child(even) {
+            background-color: #bfbbbb;
+        }
+
+        .tbl-small tr:hover {
+            background-color: rgba(63, 114, 60, 0.74);
+            color: #fff;
+        }
+
+    .tbl-small th {
+        background-color: #3f723c;
+        color: white;
+        border: 1px solid black;
+        border-collapse: collapse;
+        height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tbl-small td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+/*table place order*/
+.tblPlaceOrder {
+    /*border: 1px solid black;
+    border-collapse: collapse;*/
+    max-height: 260px;
+    display: block;
+    overflow-y: auto;
+    /*table-layout: auto;*/
+}
+
+    .tblPlaceOrder tr {
+        border-top: 1px solid #808080;
+        border-bottom: 1px solid #808080;
+        border-collapse: collapse;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 30px;
+    }
+
+        .tblPlaceOrder tr:hover {
+            background-color: none;
+        }
+
+    .tblPlaceOrder th {
+        background-color: #3f723c;
+        color: white;
+        border-top: 1px solid #808080;
+        border-bottom: 1px solid #808080;
+        border-collapse: collapse;
+        height: 30px;
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tblPlaceOrder td {
+        /*border:1px solid black;
+    border-collapse: collapse;*/
+        padding: 5px;
+        max-width: 180px;
+    }
+
+/*table order*/
+.tblOrder {
+    border: 1px solid #808080;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: auto;
+}
+
+    .tblOrder tr {
+        font-size: 14px;
+        font-weight: bold;
+        border-top: 1px solid #808080;
+        border-bottom: 1px solid #808080;
+        padding: 10px;
+        height: 40px;
+    }
+
+    .tblOrder th {
+        background-color: #3f723c;
+        color: white;
+        border-top: 1px solid #808080;
+        border-bottom: 1px solid #808080;
+        border-collapse: collapse;
+        height: 30px;
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tblOrder tr:nth-child(even) {
+        background-color: #bfbbbb;
+    }
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+/* OTHER COMPONENTS*/
+/*----------------------------------------------------------------------------------------------------------*/
+
+/*all Selects*/
+.style-select {
+    width: 250px;
+    height: 25px;
+    margin-left: 0px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+    /*font-weight: bold;*/
+    box-shadow: #679a64;
+    vertical-align: middle;
+}
+
+/*textbox search*/
+.txt-search {
+    width: 250px;
+    height: 25px;
+    margin-left: 20px;
+    border-radius: 5px;
+    /*background-color: #fff;
+    color: #808080;*/
+    font-weight: bold;
+}
+
+.lbl {
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.switchlbl {
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.lblDescr {
+    padding-bottom: 20px;
+}
+
+.errlbl {
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-weight: bold;
+    color: red;
+}
+
+.lblRibbon {
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.lblRprtDescr {
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    /*font-weight: bold;*/
+    font-size: 17px;
+}
+
+/*all textboxes (if you want a specific one to look different then just style that one*/
+.txt {
+    width: 250px;
+    border-radius: 5px;
+}
+
+.checkBox label {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.checkBox {
+    width: 10px;
+    align-content: center;
+}
+
+/*.radioButton {
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}*/
+
+
+
+/*....................................*/
+/*HEADINGS*/
+/*....................................*/
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: white;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 3px solid #3b3a3a;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+h5 {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    border-bottom: 2px solid #3b3a3a;
+}
+
+h6 {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.treeview{
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-size: 15px;
+}
+
+
+/*....................................*/
+/*FIELDSETS*/
+/*....................................*/
+
+.fieldset {
+    display: block;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #808080;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+legend {
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    color: #808080;
+    font-size: 15px;
+}
+
+
+
+/*....................................*/
+/*SLIDER BUTTON*/
+/*....................................*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+}
+
+    .switch input {
+        display: none;
+    }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333337;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+input:checked + .slider {
+    background-color: #3F723C;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(65px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+
+
+/*....................................*/
+/*TABS*/
+/*....................................*/
+.tabs .ajax__tab_header {
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: 20px;
+    /*line-height:20px;*/
+    height: 35px;
+    z-index: 1;
+}
+
+.tabs .ajax__tab_body {
+    color: #333333;
+    padding-top: 10px;
+    border-top: 3px solid #666666;
+}
+
+/*active*/
+.tabs .ajax__tab_active .ajax__tab_tab {
+    color: black;
+    height: 20px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-color: black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 36px;
+    font-size: 21px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #E3E3E3;
+}
+
+.tabs .ajax__tab_active .ajax__tab_inner {
+    color: #FFFFFF;
+    /*padding-left:10px;*/
+}
+
+.tabs .ajax__tab_active .ajax__tab_outer {
+    color: #ffffff;
+    /*padding-right:6px;*/
+}
+
+
+/*Tab Hover*/
+.tabs .ajax__tab_hover .ajax__tab_tab {
+    color: #1E1E1E;
+    height: 36px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-color: #1E1E1E;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tabs .ajax__tab_hover .ajax__tab_inner {
+    color: #000000;
+    /*padding-left:10px;*/
+}
+
+.tabs .ajax__tab_hover .ajax__tab_outer {
+    color: #000000;
+    /*padding-right:6px;*/
+}
+
+
+/*Tab Inactive*/
+.tabs .ajax__tab_tab {
+    color: #666666;
+    height: 34px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-color: #666666;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: darkgrey;
+}
+
+.tabs .ajax__tab_inner {
+    color: #666666;
+    /*padding-left:2px;*/
+}
+
+.tabs .ajax__tab_outer {
+    color: #666666;
+    /*padding-right:6px;*/
+    margin-right: 2px;
+}
+
+
+
+/*....................................*/
+/*CALENDAR*/
+/*....................................*/
+
+.calendar {
+    width: 100%;
+    height: 70%;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.calendarSelectedDate {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #808080;
+    border-radius: 7px;
+}
+
+.calendarWeekDays {
+    background-color: #679a64;
+}
+
+.calendarTitle {
+    background-color: #3F723C;
+    font-weight: bold;
+}
+
+.calendarToday {
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 7px;
+}
+
+.calendarDay:hover {
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+
+/*div for deliveries*/
+.divDeliveries {
+    width: 100%;
+    background-color: #FFFFEC;
+    border: 2px solid;
+    border-color: #808080;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#maps {
+    width: 900px;
+    height: 500px;
+    background-color: grey;
+}

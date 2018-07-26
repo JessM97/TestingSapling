@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StaticMasterPage.master.cs" Inherits="Sapling_System.MasterPages.StaticMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+         <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <link href="~/StyleSheet/StaticStyleSheet.css" rel="stylesheet" type="text/css" runat="server"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="menu">
+             <ul>
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="About.aspx">About</a></li>
+                <li><a href="Products.aspx">Products</a></li>
+                <li><a href="ContactUs.aspx">Contact Us</a></li>
+                <li style="float: right"><a class="active" href="Login.aspx">Login</a></li>
+            </ul>
+            </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+                
+           
+           
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

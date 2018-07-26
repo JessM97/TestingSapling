@@ -1,0 +1,267 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Sapling_System.MasterPage" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <link href="~/StyleSheet/StyleSheet.css" rel="stylesheet" type="text/css" runat="server"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="page">
+
+            <div class="header">
+                <div class="pageName">
+                    <asp:ContentPlaceHolder ID="ContentPageName" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="header-right">
+                    <ul id="nav">
+                        <li id="notification_li">
+                            <%-- Permanent Notification and count section --%>
+                            <a id="notificationIcon" href="#" >Notifications</a>
+                            <span id="notification_count">3</span>
+                            <br />
+                            <%-- Dropdown part --%>
+                            <div class="not_dropdown">
+                                <ul class="not_menu">
+                                    <li class="liIndivNotification">
+                                        <div class="indiv_not_new">
+                                            <label class="not_label">ID:</label>
+                                            <label class="not_label PB_ID">766</label>
+                                            <asp:LinkButton ID="btnMarkComplete" CssClass="btnNotification" runat="server">Mark Complete</asp:LinkButton>
+                                            <br />
+                                            <label class="not_label">Plant Name:</label>
+                                            <label class="not_label plantName">Lavender</label>
+                                            <br />
+                                            <label class="not_label not_message">Needs Pruning</label>
+                                        </div>
+                                    </li>
+                                    <li class="notification">
+                                        <div class="indiv_not_new">
+                                            <label class="not_label">ID:</label>
+                                            <label class="not_label PB_ID">354</label>
+                                            <asp:LinkButton ID="LinkButton1" CssClass="btnNotification" runat="server">Mark Complete</asp:LinkButton>
+                                            <br />
+                                            <label class="not_label">Plant Name:</label>
+                                            <label class="not_label plantName">Mint</label>
+                                            <br />
+                                            <label class="not_label not_message">Check Germination</label>
+                                        </div>
+                                    </li>
+                                    <li class="notification">
+                                        <div class="indiv_not_new">
+                                            <label class="not_label">ID:</label>
+                                            <label class="not_label PB_ID">346</label>
+                                            <asp:LinkButton ID="LinkButton2" CssClass="btnNotification" runat="server">Mark Complete</asp:LinkButton>
+                                            <br />
+                                            <label class="not_label">Plant Name:</label>
+                                            <label class="not_label plantName">Lettuce</label>
+                                            <br />
+                                            <label class="not_label not_message">Check Rooting</label>
+                                        </div>
+                                    </li>
+                                    <li class="notification">
+                                        <div class="indiv_not">
+                                            <label class="not_label">ID:</label>
+                                            <label class="not_label PB_ID">876</label>
+                                            <asp:LinkButton ID="LinkButton3" CssClass="btnNotification" runat="server">Mark Complete</asp:LinkButton>
+                                            <br />
+                                            <label class="not_label">Plant Name:</label>
+                                            <label class="not_label plantName">Lavender</label>
+                                            <br />
+                                            <label class="not_label not_message">Capture Growth</label>
+                                        </div>
+                                    </li>
+                                    <li class="notification">
+                                        <div class="indiv_not">
+                                            <label class="not_label">ID:</label>
+                                            <label class="not_label PB_ID">657</label>
+                                            <asp:LinkButton ID="LinkButton4" CssClass="btnNotification" runat="server">Mark Complete</asp:LinkButton>
+                                            <br />
+                                            <label class="not_label">Plant Name:</label>
+                                            <label class="not_label plantName">Avo</label>
+                                            <br />
+                                            <label class="not_label not_message">Needs Pruning</label>
+                                            </div>
+                                    </li>
+                                    <li class="notification">
+                                        <div class="indiv_not">
+                                            <label class="not_label">ID:</label>
+                                            <label class="not_label PB_ID">986</label>
+                                            <asp:LinkButton ID="LinkButton5" CssClass="btnNotification" runat="server">Mark Complete</asp:LinkButton>
+                                            <br />
+                                            <label class="not_label">Plant Name:</label>
+                                            <label class="not_label plantName">Olive</label>
+                                            <br />
+                                            <label class="not_label not_message">Check Rooting</label>
+                                            </div>
+                                    </li>
+                                    <li class="notification">
+                                        <div class="indiv_not">
+                                            <label class="not_label">ID:</label>
+                                            <label class="not_label PB_ID">354</label>
+                                            <asp:LinkButton ID="LinkButton6" CssClass="btnNotification" runat="server">Mark Complete</asp:LinkButton>
+                                            <br />
+                                            <label class="not_label">Plant Name:</label>
+                                            <label class="not_label plantName">Mint</label>
+                                            <br />
+                                            <label class="not_label not_message">Check Germination</label>
+                                            </div>
+                                    </li>
+                                    <li class="notification">
+                                        <div class="indiv_not">
+                                            <label class="not_label">ID:</label>
+                                            <label class="not_label PB_ID">354</label>
+                                            <asp:LinkButton ID="LinkButton7" CssClass="btnNotification" runat="server">Mark Complete</asp:LinkButton>
+                                            <br />
+                                            <label class="not_label">Plant Name:</label>
+                                            <label class="not_label plantName">Mint</label>
+                                            <br />
+                                            <label class="not_label not_message">Check Germination</label>
+                                            </div>
+                                    </li>
+                                    <li class="notification">
+                                        <div class="indiv_not">
+                                            <label class="not_label">ID:</label>
+                                            <label class="not_label PB_ID">354</label>
+                                            <asp:LinkButton ID="LinkButton8" CssClass="btnNotification" runat="server">Mark Complete</asp:LinkButton>
+                                            <br />
+                                            <label class="not_label">Plant Name:</label>
+                                            <label class="not_label plantName">Mint</label>
+                                            <br />
+                                            <label class="not_label not_message">Check Germination</label>
+                                            </div>
+                                    </li>
+                                    <li class="notification">
+                                        <div class="indiv_not">
+                                            <label class="not_label">ID:</label>
+                                            <label class="not_label PB_ID">354</label>
+                                            <asp:LinkButton ID="LinkButton9" CssClass="btnNotification" runat="server">Mark Complete</asp:LinkButton>
+                                            <br />
+                                            <label class="not_label">Plant Name:</label>
+                                            <label class="not_label plantName">Mint</label>
+                                            <br />
+                                            <label class="not_label not_message">Check Germination</label>
+                                            </div>
+                                    </li>
+                                    <li class="notification">
+                                        <div class="indiv_not">
+                                            <label class="not_label">ID:</label>
+                                            <label class="not_label PB_ID">354</label>
+                                            <asp:LinkButton ID="LinkButton10" CssClass="btnNotification" runat="server">Mark Complete</asp:LinkButton>
+                                            <br />
+                                            <label class="not_label">Plant Name:</label>
+                                            <label class="not_label plantName">Mint</label>
+                                            <br />
+                                            <label class="not_label not_message">Check Germination</label>
+                                            </div>
+                                    </li>
+                                    <li class="notification">
+                                        <div class="indiv_not">
+                                            <label class="not_label">ID:</label>
+                                            <label class="not_label PB_ID">354</label>
+                                            <asp:LinkButton ID="LinkButton11" CssClass="btnNotification" runat="server">Mark Complete</asp:LinkButton>
+                                            <br />
+                                            <label class="not_label">Plant Name:</label>
+                                            <label class="not_label plantName">Mint</label>
+                                            <br />
+                                            <label class="not_label not_message">Check Germination</label>
+                                            </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+            <div class="page_body">
+                <div class="left_pane">
+                    <div class="title">
+                        <asp:Image ID="profileImg" CssClass="img-rounded" ImageUrl="~/Images/Daniel Photo.JPG" runat="server" />
+                        <h2>Daniel Wilken</h2>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="Dashboard.aspx"><span>DASHBOARD</span></a></li>
+                            <li class="active has-sub"><a href="#"><span>CLIENTS</span></a>
+                                <ul>
+                                    <li><a href="ClientManagement.aspx"><span>CLIENT MANAGEMENT</span></a></li>
+                                    <li class="last"><a href="Accounts.aspx"><span>ACCOUNTS</span></a></li>
+                                </ul>
+                            </li>
+
+                            <li class=" active has-sub"><a href="#">SUPPLIERS</a>
+                                <ul>
+                                    <li><a href="SupplierManagement.aspx">SUPPLIER MANAGEMENT</a></li>
+                                    <li class="last"><a href="SupplierOrderManagement.aspx">SUPPLIER ORDERS</a></li>
+                                </ul>
+                            </li>
+                            <li class="active has-sub"><a href="#">WORKERS</a>
+                                <ul>
+                                    <li><a href="WorkerManagement.aspx">WORKER MANAGEMENT</a></li>
+                                    <li><a href="WorkLogManagement.aspx">WORKLOG MANAGEMENT</a></li>
+                                    <li class="last"><a href="WorkTypeManagement.aspx">WORK TYPE MANAGEMENT</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="OrderManagement.aspx">ORDERS</a></li>
+                            <li class=" active has-sub"><a href="#">STOCK</a>
+                                <ul>
+                                    <li><a href="StockManagement.aspx">STOCK MANAGEMENT</a></li>
+                                    <li><a href="StockTypeManagement.aspx">STOCK TYPE MANAGEMENT</a></li>
+                                    <li class="last"><a href="FertilizerManagement.aspx">FERTILIZER</a></li>
+                                    <li class="last"><a href="CashPurchasesManagement.aspx">CASH PURCHASES</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="PlantBatchManagement.aspx">PLANT BATCHES</a> </li>
+                            <li><a href="PlantStockManagement.aspx">PLANT STOCK</a></li>
+                            <li><a href="PlantTypeManagement.aspx">PLANT TYPES</a></li>
+                            <li><a href="TunnelManagement.aspx">TUNNELS</a></li>
+                            <li class="active has-sub"><a href="#">USERS</a>
+                                <ul>
+                                    <li><a href="UserManagement.aspx">USER MANAGEMENT</a></li>
+                                    <li><a href="AccessLevelManagement.aspx">ACCESS LEVEL MANAGEMENT</a></li>
+                                    <li><a href="AuditTrailManagement.aspx">AUDIT TRAIL MANAGEMENT</a></li>
+                                </ul>
+                            </li>
+                            <li class="active has-sub"><a href="#">REPORTS</a>
+                                <ul>
+                                    <li><a href="GerminationReport.aspx">GERMINATION</a></li>
+                                    <li><a href="RootingReport.aspx">ROOTING</a></li>
+                                    <li><a href="SalesReport.aspx">SALES</a></li>
+                                    <li><a href="FertilizerReport.apsx">FERTLIZER</a></li>
+                                    <li><a href="ClientReport.aspx">CLIENT</a></li>
+                                    <li class="last"><a href="StockOnHandReport.aspx">STOCK ON HAND</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Settings.aspx">SETTINGS & CONFIG.</a></li>
+                            <li><a href="#">LOGOUT</a></li>
+                        </ul>
+                        <div class="logo">
+                            <asp:Image ID="logoImg" ImageUrl="~/Images/Sapling System Logo.png" runat="server" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <asp:ContentPlaceHolder ID="content" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
+
