@@ -89,9 +89,7 @@
 
     <div class="buttons">
         <div class="bottom-right">
-            <asp:LinkButton ID="btnCancel" OnClick="btnCancel_Click" CssClass="btn" runat="server">
-            <span class="glyphicon glyphicon-ban-circle" title="Cancel" aria-hidden="true"></span> Cancel
-            </asp:LinkButton>
+          
 
             <asp:LinkButton ID="btnSave" OnClick="btnSave_Click" CssClass="btn" runat="server">
             <span class="glyphicon glyphicon-floppy-disk" title="Save" aria-hidden="true"></span> Save
